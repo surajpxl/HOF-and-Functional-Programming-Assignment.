@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>URL validation</title>
+</head>
+<body>
+  <script>
+    let url = "https://example.com";
+
+let regex = /^(http:\/\/|https:\/\/)[a-zA-Z0-9._~:\/?#[\]@!$&'()*+,;=]+(\.[a-zA-Z]+)+$/;
+
+if (regex.test(url)) {
+    console.log("Valid URL");
+} else {
+    console.log("Invalid URL");
+}
+
+  </script>
+</body>
+</html>

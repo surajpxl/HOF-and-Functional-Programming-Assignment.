@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let books = [
+    { title: "Book One", author: "john doe", year: 2008 },
+    { title: "Book Two", author: "jane smith", year: 2012 },
+    { title: "Book Three", author: "alice johnson", year: 2015 },
+    { title: "Book Four", author: "bob brown", year: 2009 },
+];
+
+let filteredBooks = books
+    .filter(book => book.year > 2010)
+    .map(book => ({ title: book.title, author: book.author.toUpperCase(), year: book.year }));
+
+console.log(filteredBooks);
+
+  </script>
+</body>
+</html>

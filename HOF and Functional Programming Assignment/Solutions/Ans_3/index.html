@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Build a feature for Store's Inventory</title>
+</head>
+<body>
+  <script>
+    let inventory = {
+    apples: 2,
+    bananas: 1,
+    oranges: 3,
+};
+
+let exchangeRate = 80;
+
+let convertedPrices = Object.fromEntries(
+    Object.entries(inventory).map(([item, price]) => [item, price * exchangeRate])
+);
+
+console.log(convertedPrices);
+
+  </script>
+</body>
+</html>

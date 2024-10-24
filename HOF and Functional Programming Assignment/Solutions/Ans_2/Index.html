@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Number Generator with Delay and Progress Indication:</title>
+</head>
+<body>
+  <script>
+    let delay = 3000;
+let countdown = delay / 1000;
+
+const interval = setInterval(() => {
+    console.log(`Time remaining: ${countdown} seconds`);
+    countdown--;
+}, 1000);
+
+setTimeout(() => {
+    clearInterval(interval);
+    let randomNumber = Math.floor(Math.random() * 100) + 1;
+    console.log(`Generated number: ${randomNumber}`);
+}, delay);
+
+  </script>
+</body>
+</html>
